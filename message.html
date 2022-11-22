@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		#message{
+           position:  absolute;
+           width: 30%;
+           height:  auto;
+           top: 50px;
+           right: 20px;
+           background: lightcyan;
+           font-family: 'Poppins', sans-serif, 'arial';
+           line-height: 50px;
+           text-align:  center;
+           border-bottom: 4em solid maroon;
+           
+		}
+
+		#up{
+			position:  relative;
+            top: 0px;
+           right: 0px;
+           background: papayawhip;
+           width: 100%;
+           height: 100px;
+		}
+      
+        .cc{
+        	width: 17em;
+        	height: 2em;
+        	text-align:  center;
+        }
+
+        #sub{
+        	font-family:  comic sans ms;
+
+        }
+
+        label{
+        	font-family:  comic sans ms;
+        	color: silver;
+            text-shadow: 1px 1px 1px white;
+            font-weight:  bold;
+        }
+
+        h2{
+        	font: 700 25px system-ui;
+	       color: white;
+          text-shadow: 2px 2px 4px #000000;
+        }
+
+
+
+	</style>
+</head>
+<body>
+
+<div id="message">
+	<div id="up"><img src="man.png" id="man"></div>
+	<h2>We'd love to hear from you!!</h2>
+<form name="msg" method="POST" action="#">
+  <label for="name">NAME</label>
+    <input type="text" name="name" class="cc" placeholder="name" required><br>
+
+    <label for="name">EMAIL</label>
+    <input type="email" name="email" class="cc" placeholder="email" required><br>
+
+    <label for="name">PHONE</label>
+    <input type="email" name="telephone" class="cc" placeholder="phone" required><br>
+
+    <label for="message">MESSAGE</label>
+   <textarea class="cc" placeholder="message" required></textarea><br>
+   
+   <input type="submit" name="submit" id="sub" value="submit">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>THE BANKING MAIN</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="bankingmain.css">
+  <meta name="viewport" content="width=device-width, scalable=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div>
+<button onclick="homelist()"><i class="fa fa-bars" aria-hidden="true" id="list"></i></button>
+<img src="statebank.png" id="stbank1">
+</div>
+
+<div id="listme">
+<a href="bankingmain.html" class="hr">HOME</a><br>
+<a href="bankregister.php" class="hr">PERSONAL ACCOUNT</a><br>
+<a href="bankregister.php" class="hr">BUSSINESS ACCOUNT</a><br>
+<a href="adminpage.php" class="hr">ADMIN PAGE</a><br>
+<a href="accountindex.php" class="hr">USER PAGE</a><br>
+<a href=loan.html class="hr">LOAN SERVICE</a><br>
+<a href="aboutus.html" class="hr">ABOUT-US</a><br>
+</div>
+
+ <div id="toptop">
+  <div class="dropdown">
+ <a href="#" id="act" class="dropbtn">ACCOUNTS<img src="account.png" id="m"></a>
+ <div class="dropdown-content">
+  <a href="bankregister.php">OPEN PERSONAL ACCOUNT</a>
+  <a href="bankregister.php">OPEN BUSSINESS ACCOUNT</a>
+  </div>
+</div>
+ <a href="#" id="act">LOANS<img src="loan.png" id="m"></a>
+ <a href="aboutus.html" id="act">ABOUT-US<img src="invest.png" id="m"></a>
+ <a href="adminpage.php" id="act">ADMINPAGE<img src="donate.png" id="m"></a>
+ <a href="userpage.php" id="act">USERPAGE<img src="banking.png" id="m"></a>
+ <img src="statebank.png" id="stbank">
+</div>
+
+
+<div id="slider">
+<figure>
+<img src="bank1.jpg" alt>
+<img src="bank2.jpg" alt>
+<img src="bank3.jpg" alt>
+<img src="bank4.jpg" alt>
+</figure>  
+</div>  
+  
+  
+  
+<div id="message">
+  <div id="up"><img src="man.png" id="man"></div>
+  <h2>We'd love to hear from you!!</h2>
+
+<form name="msg" method="POST" action="https://formsubmit.co/rans76boat@gmail.com">
+    <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="welcome to devtraco">
+  <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com">
+  <input type="hidden" name="_autoresponse" value="devtraco shipping has approve your order">
+  <input type="hidden" name="_template" value="table">
+
+  <label for="name">NAME</label>
+    <input type="text" name="name" class="cc" placeholder="name" required><br>
+
+    <label for="name">EMAIL</label>
+    <input type="email" name="email" class="cc" placeholder="email" required><br>
+
+    <label for="name">PHONE</label>
+    <input type="number" name="telephone" class="cc" placeholder="phone" required><br>
+
+    <label for="message">MESSAGE</label>
+   <textarea class="cc" placeholder="message" required></textarea><br>
+   
+   <input type="submit" name="submit" id="sub" value="submit">
+   </form>
+</div>
+
+
+<div id="fade">
+  <p>Oh, hello there!<br>
+  Would you love to bank with us?<br>
+  LETS START!!!</p>
+</div>
+
+
+<div id="manu">
+
+<div id="account">
+<img src="accountopen.webp" alt="">
+<p>Hello there,Do you wish to open an account?</p>
+<p>Lets help you with our secure convinient service?</p>
+<p>THANK YOU</p><BR>
+<button type="button" id="but">Lets GO</button>
+</div>
+
+<div id="loans">
+<img src="loan.webp" alt="">
+<p>Hello There,Do you need any financial assistance?</p>
+<p>Lets help you get connected to some financial intitution that will help!!</p>
+<p>Provided you meet up the standard requirement.THANK YOU</p><BR>
+<button type="button" id="but" onclick="window.location.href='loan.html'">Lets GO</button>
+</div>
+
+<div id="investment">
+  <img src="investment.jpg" alt="" id="inv">
+<p>Hello there,for investment into our organisation,</p>
+<p>please contact us through our contact section for more info</p>
+<p>THANK YOU</p><br>
+<button type="button" id="but">Lets GO</button>
+</div>
+</div>
+
+
+<body onload="load()">
+
+   <div id="allnum">
+<div class="run1">
+   <p class="rn">Registerd Users</p><i class="fa fa-users" aria-hidden="true"></i>
+   <p id="num1">0</p>   
+</div>
+
+<div class="run2">
+   <p class="rn">Active Transactions</p><i class="fa fa-handshake-o" aria-hidden="true"></i>
+<p id="num2">2000</p>
+</div>
+
+<div class="run3">
+   <p class="rn">Succesfull Transaction</p><i class="fa fa-star" aria-hidden="true"></i>
+<p id="num3">75</p>
+</div>
+</div>
+
+<script>
+
+ var hide =  document.getElementById("listme");
+ var show =  document.getElementById("listme");
+
+function homelist(){
+   if(hide.style.display === "none"){
+       hide.style.display ="none";
+       show.style.display ="block";
+   }
+
+   else {
+      show.style.display = "block";
+      hide.style.display = "none";
+   }
+}
+
+</script>
+
+
+<script>
+      function animate(obj, initVal, lastVal, duration) {
+         let startTime = null;
+
+      //get the current timestamp and assign it to the currentTime variable
+      let currentTime = Date.now();
+
+      //pass the current timestamp to the step function
+      const step = (currentTime ) => {
+
+      //if the start time is null, assign the current time to startTime
+      if (!startTime) {
+         startTime = currentTime ;
+      }
+
+      //calculate the value to be used in calculating the number to be displayed
+      const progress = Math.min((currentTime - startTime)/ duration, 1);
+
+      //calculate what to be displayed using the value gotten above
+      obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+
+      //checking to make sure the counter does not exceed the last value (lastVal)
+      if (progress < 1) {
+         window.requestAnimationFrame(step);
+      } else {
+            window.cancelAnimationFrame(window.requestAnimationFrame(step));
+         }
+      };
+      //start animating
+         window.requestAnimationFrame(step);
+      }
+      let text1 = document.getElementById('num1');
+      let text2 = document.getElementById('num2');
+      let text3 = document.getElementById('num3');
+      const load = () => {
+         animate(text1, 0, 3000, 40000);
+         animate(text2, 0, 2000, 40000);
+         animate(text3, 0, 75, 40000);
+      }
+
+  </script>
+
+
+
+
+<footer class="footer-distributed">
+
+         <div class="footer-left">
+
+            <h3>Developed By<span>CodeTech</span></h3>
+
+            <p class="footer-links">
+               <a href="bankingmain.html" class="link-1">Home</a>
+               
+               <a href="#">Blog</a>
+            
+               <a href="aboutus.html">About</a>
+               
+               <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">American State Bank © 2015</p>
+         </div>
+
+         <div class="footer-center">
+
+            <div>
+               <i class="fa fa-map-marker"></i>
+               <p><span>BA street ashiaman</span> greater accra, ghana</p>
+            </div>
+
+            <div>
+               <i class="fa fa-phone"></i>
+               <p>0268343400</p>
+            </div>
+
+            <div>
+               <i class="fa fa-envelope"></i>
+               <p><a href="mailto:support@company.com">support@company.com</a></p>
+            </div>
+
+         </div>
+
+         <div class="footer-right">
+
+            <p class="footer-company-about">
+               <span>About the company</span>
+               we will help you with all your online transaction with minimum charges and 
+               maximum security!!!!
+            </p>
+
+            <div class="footer-icons">
+
+               <a href="#"><i class="fa fa-facebook"></i></a>
+               <a href="#"><i class="fa fa-twitter"></i></a>
+               <a href="#"><i class="fa fa-linkedin"></i></a>
+               <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+         </div>
+
+      </footer>
+
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,562 @@
+*{
+    padding:  0px;
+    margin:  0px;
+    border: 0px;
+}
+
+.dropbtn {
+  background: silver;
+  color: white;
+  padding: 16px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+#list{
+    display:  none;
+}
+
+#listme{
+    display:  none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+#toptop{
+    position: absolute;
+    top: 0px;
+    left:  2em;
+    display: flex;
+    float: right;
+    font-weight:  bold;
+    font-family: 'Poppins', sans-serif, 'arial';
+}
+
+#stbank{
+    position:  relative;
+    top:  -2.5em;
+    right:  -10em;
+}
+
+#stbank1{
+    display:  none;
+}
+
+
+#toptop a{
+    padding: 1.5em;
+    text-decoration:  none;
+}
+
+
+    #message{
+           position:  absolute;
+           width: 30%;
+           height:  auto;
+           top: 100px;
+           right: 20px;
+           background: lightcyan;
+           font-family: 'Poppins', sans-serif, 'arial';
+           line-height: 50px;
+           text-align:  center;
+           border-bottom: 4em solid maroon;
+           z-index: 1;
+           opacity: 0.9;
+           
+        }
+
+        #up{
+            position:  relative;
+            top: 0px;
+           right: 0px;
+           background: papayawhip;
+           width: 100%;
+           height: 100px;
+        }
+      
+        .cc{
+            width: 17em;
+            height: 2em;
+            text-align:  center;
+        }
+
+        #sub{
+            font-family:  comic sans ms;
+
+        }
+
+        label{
+            color: silver;
+            text-shadow: 1px 1px 1px white;
+            font-weight:  bold;
+            font-family: 'Poppins', sans-serif, 'arial';
+        }
+
+        h2{
+            font: 700 25px system-ui;
+           color: white;
+          text-shadow: 2px 2px 4px #000000;
+          font-family: 'Poppins', sans-serif, 'arial';
+        }
+
+
+@keyframes fadeIn { 
+  from { opacity: 0; } 
+}
+
+
+
+#fade p {
+  position: absolute;
+  top: 200px;
+  left:  0px;
+  font: italic bold 4em/1 Bodoni, serif;
+  color: gold;
+  text-align: center;
+  animation: fadeIn 1s infinite alternate;
+  
+}
+
+
+
+#manu{
+    width:  100%;
+    background: gold;
+    display: flex;
+    background:  none;
+}
+
+#account,#loans,#investment{
+ width: 25%;
+ height: auto;
+ margin: 4%;
+}
+
+#manu p{
+font-family: 'Poppins', sans-serif, 'arial';
+font-size: 20px;
+}
+
+#but{
+font-family: 'Poppins', sans-serif, 'arial';
+ font: italic bold 1.5em/1 Bodoni, serif;
+}
+
+
+#allnum {
+  width:  100%;
+  height: 250px;
+  display:  flex;
+  background: whitesmoke;
+
+
+}
+
+.run1,.run2,.run3{
+  margin-left: 10%;
+  border-radius: 50%;
+  font-size: 80px;
+  width:  20%;
+  height: 250px;
+  text-align: center;
+  font: 800 50px system-ui;
+  background: none;
+}
+
+.rn{
+   text-align: center;
+   font-size: 25px;
+   padding-top: 0px;
+   line-height: 30px;
+   margin-top: 20px;
+}
+
+#num1,#num2,#num3{
+   margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin-top: 5em; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; height: 500px; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 16s slidy infinite; 
+
+  
+}
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+
+.footer-distributed{
+    background: #666;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+    width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Open Sans', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span{
+    color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+  font-weight:400;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+    color:  #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+    width: 35%;
+}
+
+.footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+  font-weight:400;
+    vertical-align: middle;
+    margin:0;
+}
+
+.footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+    color:  lightseagreen;
+    text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+    .footer-distributed{
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i{
+        margin-left: 0;
+    }
+
+}
+
+
+@media all and (max-width: 580px){
+
+#manu{
+    width:  100%;
+    height:  auto;
+    background: lightsalmon;
+    display: inline-block;
+    background:  none;
+}
+
+#manu img {
+    max-width: 95vw;    
+    height: auto;
+    display:  inline-block;
+}
+
+#account,#loans,#investment{
+width:  95vw;
+}
+
+#list{
+    position:  absolute;
+    display:  block;
+    top:  1em;
+    left:  1em;
+    font-size:  30px;
+}
+
+
+
+#listme{
+    position:  absolute;
+    z-index: 1;
+    display:  none;
+    width:  100%;
+    background:  cyan;
+    height: auto;
+    line-height:  60px;
+   }
+
+   #listme a {
+    font-size:  30px;
+}
+
+#cls{
+    position:  relative;
+    top: 0px;
+    right:  0px;
+    font-size:  40px;
+}
+
+.hr{
+    text-decoration:  none;
+  
+}
+
+#toptop{
+    display:  none;
+}
+
+
+  #message{
+           position: relative;
+           top: 0px;
+           width: 100vw;
+           height: auto;
+           right: 0px;
+           left:  0px;
+           background: lightcyan;
+           font-family: 'Poppins', sans-serif, 'arial';
+           line-height: 50px;
+           text-align:  center;
+           border-bottom: 4em solid lightcyan;               
+        }
+
+#fade p {
+  position: absolute;
+  top: 200px;
+  left:  0px;
+  font: italic bold 2.5em/1 Bodoni, serif;
+  color: gold;
+  text-align: center;
+  animation: fadeIn 1s infinite alternate;
+  
+}
+
+.rn{
+   text-align: center;
+   line-height: 30px;
+   margin-top: 20px;
+}
+
+#allnum {
+  display: absolute;
+  width:  100%;
+  height: 250px;
+  display: inline-block;
+}
+
+.run1,.run2,.run3{
+    padding:  1.4em;
+    font-size: 4.5em;
+}
+
+#stbank1{
+    display: block;
+    position:  absolute;
+    top: -3em;
+    right: 0px;
+}
+
+
+
+ 
+
+    
+}
+
+
+
+
+
+

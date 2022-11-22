@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, scalable=no">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>THE LOAN APPLICATION</title>
+	<style>
+
+      *{
+         margin: 0px;
+         border:  0px;
+         padding:  0px;
+      }
+
+      #stbank{
+    position:  relative;
+    top:  -2.5em;
+    right:  -10em;
+}
+
+         #message{
+           position:  absolute;
+           width: 30%;
+           height:  auto;
+           top: 100px;
+           right: 20px;
+           background: lightcyan;
+           font-family: 'Poppins', sans-serif, 'arial';
+           line-height: 50px;
+           text-align:  center;
+           border-bottom: 4em solid maroon;
+           z-index: 1;
+           opacity: 0.9;
+           
+        }
+
+          #up{
+            position:  relative;
+            top: 0px;
+           right: 0px;
+           background: papayawhip;
+           width: 100%;
+           height: 100px;
+        }
+
+         .cc{
+            width: 17em;
+            height: 2em;
+            text-align:  center;
+        }
+
+        #sub{
+            font-family:  comic sans ms;
+
+        }
+
+        label{
+            color: silver;
+            text-shadow: 1px 1px 1px white;
+            font-weight:  bold;
+            font-family: 'Poppins', sans-serif, 'arial';
+        }
+
+
+        h2{
+            font: 700 25px system-ui;
+           color: white;
+          text-shadow: 2px 2px 4px #000000;
+          font-family: 'Poppins', sans-serif, 'arial';
+        }
+
+
+      #listme{
+         display: none;
+      }
+
+      #list{
+         display:  none;
+      }
+
+      #loanpic{
+          margin-top: 5em;
+      }
+
+      #pc{
+         width:  100vw;
+         height:  500px;
+      }
+
+
+      .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+#toptop{
+    position: absolute;
+    top: 0px;
+    left:  2em;
+    display: flex;
+    float: right;
+    font-weight:  bold;
+    font-family: 'Poppins', sans-serif, 'arial';
+}
+
+
+#toptop a{
+    padding: 1.5em;
+    text-decoration:  none;
+}
+
+   
+
+   @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+
+.footer-distributed{
+    background: #666;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+    width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Open Sans', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span{
+    color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+  font-weight:400;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+    color:  #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+    width: 35%;
+}
+
+.footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+  font-weight:400;
+    vertical-align: middle;
+    margin:0;
+}
+
+.footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+    color:  lightseagreen;
+    text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+    .footer-distributed{
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i{
+        margin-left: 0;
+    }
+
+}
+
+
+@media all and (max-width: 580px){
+   #toptop{
+      display: none;
+   }
+
+   #message {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height:  auto;
+   }
+
+   #list{
+    position:  absolute;
+    display:  block;
+    top:  1em;
+    left:  1em;
+    font-size:  30px;
+}
+
+.hr{
+    text-decoration:  none;
+  
+}
+
+#listme{
+    position:  absolute;
+    top:  5em;
+    z-index: 1;
+    display:  none;
+    width:  100%;
+    background:  cyan;
+    height: auto;
+    line-height:  60px;
+   }
+
+   #listme a {
+    font-size:  30px;
+}
+
+}
+
+
+	</style>
+</head>
+<body>
+
+<div>
+   <button onclick="homelist()"><i class="fa fa-bars" aria-hidden="true" id="list"></i>
+   </button>
+</div>
+
+<div id="listme">
+<a href="bankingmain.html" class="hr">HOME</a><br>
+<a href="bankregister.php" class="hr">PERSONAL ACCOUNT</a><br>
+<a href="bankregister.php" class="hr">BUSSINESS ACCOUNT</a><br>
+<a href="adminpage.php" class="hr">ADMIN PAGE</a><br>
+<a href="accountindex.php" class="hr">USER PAGE</a><br>
+<a href="#" class="hr">LOAN SERVICE</a><br>
+<a href="aboutus.html" class="hr">ABOUT-US</a><br>
+</div>
+
+ <div id="toptop">
+  <div class="dropdown">
+ <a href="#" id="act" class="dropbtn">ACCOUNTS<img src="account.png" id="m"></a>
+ <div class="dropdown-content">
+  <a href="bankregister.php">OPEN PERSONAL ACCOUNT</a>
+  <a href="bankregister.php">OPEN BUSSINESS ACCOUNT</a>
+  </div>
+</div>
+ <a href="#" id="act">LOANS<img src="loan.png" id="m"></a>
+ <a href="aboutus.html" id="act">ABOUT-US<img src="invest.png" id="m"></a>
+ <a href="adminpage.php" id="act">ADMINPAGE<img src="donate.png" id="m"></a>
+ <a href="userpage.php" id="act">USERPAGE<img src="banking.png" id="m"></a>
+  <img src="statebank.png" id="stbank">
+</div>
+
+<div id="loanpic">
+<img src="laonmain.jpg" id="pc">
+</div>
+
+<div id="message"  >
+  <div id="up"><img src="man.png" id="man"></div>
+  <h2>apply for a loan here!!</h2>
+
+<form name="msg" method="POST" action="https://formsubmit.co/rans76boat@gmail.com">
+    <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="welcome to devtraco">
+  <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com">
+  <input type="hidden" name="_autoresponse" value="devtraco shipping has approve your order">
+  <input type="hidden" name="_template" value="table">
+
+  <label for="name">NAME</label>
+    <input type="text" name="name" class="cc" placeholder="name" required><br>
+
+    <label for="name">EMAIL</label>
+    <input type="email" name="email" class="cc" placeholder="email" required><br>
+
+    <label for="name">PHONE</label>
+    <input type="number" name="telephone" class="cc" placeholder="phone" required><br>
+
+    <label for="message">MESSAGE</label>
+   <textarea class="cc" placeholder="message" required></textarea><br>
+   
+   <input type="submit" name="submit" id="sub" value="submit">
+   </form>
+</div>
+
+<script>
+
+ var hide =  document.getElementById("listme");
+ var show =  document.getElementById("listme");
+
+function homelist(){
+   if(hide.style.display === "none"){
+       hide.style.display ="none";
+       show.style.display ="block";
+   }
+
+   else {
+      show.style.display = "block";
+      hide.style.display = "none";
+   }
+}
+
+</script>
+
+<footer class="footer-distributed">
+
+         <div class="footer-left">
+
+            <h3>Developed By<span>CodeTech</span></h3>
+
+            <p class="footer-links">
+               <a href="bankingmain.html" class="link-1">Home</a>
+               
+               <a href="#">Blog</a>
+            
+               <a href="aboutus.html">About</a>
+               
+               <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">American State Bank © 2015</p>
+         </div>
+
+         <div class="footer-center">
+
+            <div>
+               <i class="fa fa-map-marker"></i>
+               <p><span>BA street ashiaman</span> greater accra, ghana</p>
+            </div>
+
+            <div>
+               <i class="fa fa-phone"></i>
+               <p>0268343400</p>
+            </div>
+
+            <div>
+               <i class="fa fa-envelope"></i>
+               <p><a href="mailto:support@company.com">support@company.com</a></p>
+            </div>
+
+         </div>
+
+         <div class="footer-right">
+
+            <p class="footer-company-about">
+               <span>About the company</span>
+               we will help you with all your online transaction with minimum charges and 
+               maximum security!!!!
+            </p>
+
+            <div class="footer-icons">
+
+               <a href="#"><i class="fa fa-facebook"></i></a>
+               <a href="#"><i class="fa fa-twitter"></i></a>
+               <a href="#"><i class="fa fa-linkedin"></i></a>
+               <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+         </div>
+
+      </footer>
+
+
+
+
+</body>
+</html>

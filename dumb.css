@@ -1,0 +1,15 @@
+@media screen and (min-width: 240px) and (max-width: 580px) {
+
+#topmain,#rightside{
+	display:  none;
+}
+
+#leftside{
+	
+}
+
+
+
+
+}
+
